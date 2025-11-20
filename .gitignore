@@ -417,4 +417,4 @@ FodyWeavers.xsd
 *.msm
 *.msp
 
-GaussDBMcpServer/.vscode/mcp.json
+/.vscode/mcp.json
