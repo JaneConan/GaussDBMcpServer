@@ -1,0 +1,56 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "description": "一个基于 C# Model Context Protocol (MCP) 的 GaussDB 数据库操作服务器，提供了完整的数据库操作工具集，包括数据库连接测试、数据库管理、表管理和数据操作（增删改查）等功能。",
+  "title": "GaussDB MCP Server",
+  "author": "JaneConan",
+  "license": "MIT",
+  "name": "io.github.JaneConan/GaussDBMcpServer",
+  "version": "0.1.0-beta",
+  "packages": [
+    {
+      "registryType": "nuget",
+      "identifier": "GaussDBMcpServer",
+      "version": "0.1.0-beta",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [],
+      "environmentVariables": [
+        {
+          "name": "GAUSSDB_HOST",
+          "description": "GaussDB 数据库主机地址",
+          "default": "127.0.0.1",
+          "isRequired": false
+        },
+        {
+          "name": "GAUSSDB_PORT",
+          "description": "GaussDB 数据库端口号",
+          "default": "8000",
+          "isRequired": false
+        },
+        {
+          "name": "GAUSSDB_USER",
+          "description": "GaussDB 数据库用户名",
+          "default": "root",
+          "isRequired": false
+        },
+        {
+          "name": "GAUSSDB_PASSWORD",
+          "description": "GaussDB 数据库密码",
+          "isRequired": true,
+          "isSecret": false
+        },
+        {
+          "name": "GAUSSDB_DATABASE",
+          "description": "默认数据库名称",
+          "default": "postgres",
+          "isRequired": false
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/JaneConan/GaussDBMcpServer",
+    "source": "github"
+  }
+}
